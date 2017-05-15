@@ -10,7 +10,7 @@ public class MySQLAdapter {
     public static String PASSWORD = "toor";
     public static String PORT_NUMBER = "3306";
     public static String HOST_NAME = "localhost";
-    public static String DATABASE_NAME = "gammu?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    public static String DATABASE_NAME = "sms?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private Sql2o mysql = null;
 
     public MySQLAdapter() {
