@@ -7,6 +7,8 @@ import app.inbox.InboxModel;
 import app.gammu.GammuModel;
 import app.outbox.OutboxController;
 import app.outbox.OutboxModel;
+import app.user.UserController;
+import app.user.UserModel;
 import org.sql2o.Sql2o;
 
 import java.util.logging.Logger;
@@ -27,10 +29,12 @@ public class Application {
         InboxModel inboxModel = new InboxModel(mysql);
         GammuModel gammuModel = new GammuModel(mysql);
         OutboxModel outboxModel = new OutboxModel(mysql);
+        UserModel userModel = new UserModel(mysql);
 
         new InboxController(inboxModel);
         new GammuController(gammuModel);
         new OutboxController(outboxModel);
+        new UserController(userModel);
 
     }
 
