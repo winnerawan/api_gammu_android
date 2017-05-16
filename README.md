@@ -23,6 +23,17 @@ implied.
  limitations under the License.
 ****************************************************************************/
 ```
+
+### Requirements
+   * Gammu version 16
+   * Java 8
+### How To
+   * Set up database (upload later)
+   * Ganti database & password di db.MySQLAdapter
+   * Build & run
+```bash
+   java -jar name_of_jar_file.jar -cp app.Application
+```
 ### Contoh
 
 ## Index
@@ -41,7 +52,7 @@ implied.
 ```
 
 ## User
-   * ``` Make table user with 5 fields (user_id (AUTO_INCREMENT), username, email, password, gcm_id)```
+   * ``` Buat table user dengan 5 kolom (user_id (AUTO_INCREMENT), username, email, password, gcm_id)```
 ### Register
    * Request
       * _POST_ ```/register```
@@ -60,6 +71,8 @@ implied.
   }
 }
 ```
+   * _Password encode using BCrypt (Spring Security) it's save!_
+   
 
 ### List Inbox
    * Request
