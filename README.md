@@ -25,6 +25,42 @@ implied.
 ```
 ### Contoh
 
+## Index
+
+   * Request 
+      * _GET_ ```/```
+   * Response
+```js
+{
+  "status": 200,
+  "message": "Selamat! Anda telah menemukan halaman kosong! Pergi rayakan penemuan besar ini dengan mengirimkan admin kopi...",
+  "result": {
+    "gammu_version": "13"
+  }
+}
+```
+
+## User
+   * ``` Make table user with 5 fields (user_id (AUTO_INCREMENT), username, email, password, gcm_id)```
+### Register
+   * Request
+      * _POST_ ```/register```
+   * Params
+      * username
+      * email
+      * password
+   * Response
+```js
+{
+  "status": 200,
+  "message": "OK",
+  "result": {
+    "username": "administrator",
+    "email": "admin@gmail.com"
+  }
+}
+```
+
 ### List Inbox
    * Request
      * _GET_ ```/inboxes```
@@ -93,4 +129,5 @@ implied.
 }
 ```
 
-###EOF
+#### Update later...
+### EOF
